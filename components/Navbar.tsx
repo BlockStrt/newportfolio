@@ -29,7 +29,7 @@ function Navbar() {
                     initial={{y: -10, opacity: 0}}
                     animate={{y: 0, opacity: 1}}
                     transition={{duration: 2.3, delay: 0.4}}>
-                    <span>01.</span> About
+                    <span className='text-textGreen'>01.</span> About
                     </motion.li>
                     </Link>
 
@@ -39,27 +39,17 @@ function Navbar() {
                     initial={{y: -10, opacity: 0}}
                     animate={{y: 0, opacity: 1}}
                     transition={{duration: 2.3, delay: 0.4}}>
-                    <span>01.</span> Experience
+                    <span className='text-textGreen'>02.</span> Experience
                     </motion.li>
                     </Link>
 
-                    <Link href='#home' className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen
+                    <Link href='#projects' className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen
                     cursor-pointer duration-300 nav-link'>
                     <motion.li 
                     initial={{y: -10, opacity: 0}}
                     animate={{y: 0, opacity: 1}}
                     transition={{duration: 2.3, delay: 0.4}}>
-                    <span>01.</span> About
-                    </motion.li>
-                    </Link>
-
-                    <Link href='#project' className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen
-                    cursor-pointer duration-300 nav-link'>
-                    <motion.li 
-                    initial={{y: -10, opacity: 0}}
-                    animate={{y: 0, opacity: 1}}
-                    transition={{duration: 2.3, delay: 0.4}}>
-                    <span>01.</span> Project
+                    <span className='text-textGreen'>03.</span> Projects
                     </motion.li>
                     </Link>
 
@@ -69,9 +59,10 @@ function Navbar() {
                     initial={{y: -10, opacity: 0}}
                     animate={{y: 0, opacity: 1}}
                     transition={{duration: 2.3, delay: 0.4}}>
-                    <span>01.</span> Contact
+                    <span className='text-textGreen'>04.</span> Contact
                     </motion.li>
                     </Link>
+
                 </ul>
                <a href='/assets/jlevyres.pdf' target='_blank'>
                <motion.button

@@ -23,8 +23,20 @@ function Banner() {
         transition={{delay:1.5}}>
         <Image className='relative rounded-full h-32 w-32 mx-auto object-cover' src='/assets/images/pfp.jpeg' width={100} height={100} alt='image'/>
         </motion.div>
+        <motion.h2
+        initial={{opacity: 0}}
+        animate={{opacity:1}}
+        transition={{delay:1.5}}
+         className='text-sm uppercase text-gray-500 pb-2 tracking-[15px] mx-auto'>Software Engineer</motion.h2>
         <h3 className='text-lg font-titleFont tracking-wide text-textGreen text-center'>{text}</h3>
-        
+        <motion.div
+        initial={{opacity: 0}}
+        animate={{opacity:1}}
+        transition={{delay:1.5}} 
+        className='mx-auto'>
+        <button className=' w-52 h-14 text-sm font-titleFont border mx-auto border-textGreen rounded-md text-textGreen
+         tracking-wide hover:bg-hoverColor duration-300 z-auto'>Visit Projects</button>
+       </motion.div>
         </section>
   )
 }
