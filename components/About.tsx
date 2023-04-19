@@ -3,6 +3,7 @@ import SectionTitle from './SectionTitle'
 import Image from 'next/image'
 
 
+
 function About() {
   return (
     <section id='about'
