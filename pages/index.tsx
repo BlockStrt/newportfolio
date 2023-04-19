@@ -7,6 +7,7 @@ import RightSide from '@/components/RightSide'
 import { motion } from 'framer-motion'
 import Banner from '@/components/Banner'
 import About from '@/components/About'
+import Experience from '@/components/Experience'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -33,6 +34,7 @@ export default function Home() {
         {/* about */}
         <About/>
         {/* experience */}
+        <Experience/>
         {/* projects */}
         {/* archive */}
         {/* contact */}
