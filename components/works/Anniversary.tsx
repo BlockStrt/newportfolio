@@ -14,7 +14,7 @@ const Anniversary = () => {
         <ul className="mt-6 flex flex-col gap-3">
             <li className="text-base flex gap-2 text-textDark mt-2">
                 <span className="text-textGreen"><GiChemicalArrow/></span>{" "}
-                Parent company distributing to DSP`s & merchandise
+                Parent company distributing to DSPs & merchandise
             </li>
             <li className="text-base flex gap-2 text-textDark mt-2">
                 <span className="text-textGreen"><GiChemicalArrow/></span>{" "}
