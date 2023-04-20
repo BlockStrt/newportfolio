@@ -27,8 +27,12 @@ function Banner() {
         initial={{opacity: 0}}
         animate={{opacity:1}}
         transition={{delay:1.5}}
-         className=' text-sm uppercase text-gray-500 pb-2 tracking-[15px] text-center mx-auto'>Software Engineer</motion.h2>
-        <h3 className='text-lg font-titleFont tracking-wide text-textGreen text-center mx-auto'>{text}</h3>
+         className=' text-sm uppercase text-gray-500 pb-2 tracking-[15px] text-center mx-auto'>Software Engineer
+         </motion.h2>
+        
+        <h3 className='text-lg font-titleFont tracking-wide h-6 text-textGreen text-center mx-auto'>{text}
+        </h3>
+     
         <motion.div
         initial={{opacity: 0}}
         animate={{opacity:1}}
