@@ -45,26 +45,46 @@ function Experience() {
             <ul className='md:w-32 flex flex-col'>
                 <li
                 onClick={handleHammer}
-                 className=' border-l-2 border-l-textGreen text-textDark  bg-transparent hover:bg-[#55423d] py-3 text-sm
-                cursor-pointer duration-300 px-8 font-medium'>
+                 className={`${
+                    workHammer 
+                    ? "border-l-textGreen text-textGreen" 
+                    : " border-l-[#000] text-textDark"
+                }
+                  border-l-2 border-l-textDark text-textDark  bg-transparent hover:bg-[#55423d] py-3 text-sm
+                 cursor-pointer duration-300 px-8 font-medium`}>
                     Hammer&Hope
                 </li>
                 <li 
                 onClick={handleJug}
-                className=' border-l-2 border-l-hoverColor text-textDark  bg-transparent hover:bg-[#55423d] py-3 text-sm
-                cursor-pointer duration-300 px-8 font-medium'>
+                className={`${
+                    workJug 
+                    ? "border-l-textGreen text-textGreen" 
+                    : " border-l-[#000] text-textDark"
+                }
+                  border-l-2 border-l-textDark text-textDark  bg-transparent hover:bg-[#55423d] py-3 text-sm
+                 cursor-pointer duration-300 px-8 font-medium`}>
                     Jugrnuat
                 </li>
                 <li 
                 onClick={handleHalf}
-                className=' border-l-2 border-l-hoverColor text-textDark  bg-transparent hover:bg-[#55423d] py-3 text-sm
-                cursor-pointer duration-300 px-8 font-medium'>
+                className={`${
+                    workHalf
+                    ? "border-l-textGreen text-textGreen" 
+                    : " border-l-[#000] text-textDark"
+                }
+                  border-l-2 border-l-textDark text-textDark  bg-transparent hover:bg-[#55423d] py-3 text-sm
+                 cursor-pointer duration-300 px-8 font-medium`}>
                     Half Evil
                 </li>
                 <li 
                 onClick={handleAnni}
-                className=' border-l-2 border-l-hoverColor text-textDark  bg-transparent hover:bg-[#55423d] py-3 text-sm
-                cursor-pointer duration-300 px-8 font-medium'>
+                className={`${
+                    workAnni 
+                    ? "border-l-textGreen text-textGreen" 
+                    : " border-l-[#000] text-textDark"
+                }
+                  border-l-2 border-l-textDark text-textDark  bg-transparent hover:bg-[#55423d] py-3 text-sm
+                 cursor-pointer duration-300 px-8 font-medium`}>
                     Anniversary Group
                 </li>
             </ul>
