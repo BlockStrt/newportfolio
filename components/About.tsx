@@ -13,11 +13,11 @@ function About() {
             <div className='w-full lgl:w-2/3 text-base text-textDark font-medium flex
             flex-col gap-4'>
                 <p>
-                Web developer with 
-                <span className='text-textGreen'> nearly 2 years experience </span> currently working on expanding development knowledge across all technologies.<span className='text-textGreen'> Seeking to leverage</span> technical/creative skill to progress the work flow of teams. Leveraging my creative vision to design real world applications guiding me to unlock great potential when it comes to building.
+                Web developer with a proven track record of 2 years in web development,<span className='text-textGreen'> I am currently on a quest</span> to broaden my expertise in all technologies, while utilizing my technical and creative skills to enhance team productivity and harness the full potential of designing real-world applications. 
                 </p>
                 <p>
-                    Here are a few technologies I have been working with recently:
+                My competency spans across a diverse range of technologies,
+                <br/> <span className='text-textGreen'>including but not limited to: </span>
                 </p>
                 <ul className='max-w-[450px] text-sm font-titleFont grid grid-cols-2 mt-6'>
                     <li className='flex items-center gap-2'>
