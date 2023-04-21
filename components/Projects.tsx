@@ -34,6 +34,7 @@ const Projects = () => {
                 <li>NextJS</li>
                 <li>React</li>
                 <li>Sass</li>
+                <li>Sanity IO</li>
               </ul>
               <div className='text-2xl flex gap-4'>
                 <a 
