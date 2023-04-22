@@ -9,6 +9,7 @@ import Banner from '@/components/Banner'
 import About from '@/components/About'
 import Experience from '@/components/Experience'
 import Projects from '@/components/Projects'
+import Archive from '@/components/Archive'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -39,6 +40,7 @@ export default function Home() {
         {/* projects */}
         <Projects/>
         {/* archive */}
+        <Archive/>
         {/* contact */}
         {/* footer */}
       </div>
