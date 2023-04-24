@@ -13,6 +13,7 @@ function Navbar() {
   const [showMenu, setShowMenu] = useState(false)
   const handleScroll = (e:React.MouseEvent<HTMLAnchorElement, MouseEvent>) =>{
     e.preventDefault();
+    setShowMenu(false)
     const href = e.currentTarget.href;
     const targetId = href.replace(/.*\#/, '')
     const elem = document.getElementById(targetId);
@@ -27,6 +28,11 @@ function Navbar() {
     e.currentTarget.classList.add('active')
   }
 
+  function handleClick(e:any){
+    if(e.target.contains(ref.current)){
+      setShowMenu(false)
+    }
+  }
   return (
     <div className='w-full shadow-navbarShadow h-20 lg:h-[12vh] sticky top-0 z-50 bg-bodyColor px-4
    '>
@@ -128,6 +134,7 @@ function Navbar() {
               showMenu && (
                 <div 
                 ref={(node) => (ref.current = node)}
+                onClick={handleClick}
                 className='absolute mdl:hidden top-0 right-0 w-full h-screen bg-black
                 bg-opacity-50 flex flex-col items-end'
                 >
@@ -220,6 +227,7 @@ function Navbar() {
                  >
                     Resume
                     </motion.button>
+                    
                </a>
                     <div className='flex gap-6 mt-12'>
                      <Tooltip content={'Github'} color='invert'>
@@ -260,8 +268,16 @@ function Navbar() {
                     </Tooltip>
                     </div>
                 </div>
+                <motion.a
+                initial={{opacity:0}}
+                animate={{opacity:1}}
+                transition={{delay: 1.2, ease: 'easeIn'}}
+                className='text-sm w-72 tracking-widest text-textgreen text-center mt-4'
+                href='mailto:blockstarter34@gmail.com'
+                >
+                  <p>blockstarter34@gmail.com</p>
+                </motion.a>
                 </motion.div>
-
                 </div>
               )
             }
