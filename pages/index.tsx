@@ -10,6 +10,7 @@ import About from '@/components/About'
 import Experience from '@/components/Experience'
 import Projects from '@/components/Projects'
 import Archive from '@/components/Archive'
+import Contact from '@/components/Contact'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -42,6 +43,7 @@ export default function Home() {
         {/* archive */}
         <Archive/>
         {/* contact */}
+        <Contact/>
         {/* footer */}
       </div>
       <motion.div 
