@@ -24,8 +24,8 @@ module.exports = {
         xl: '1280px',
       },
       fontFamily: {
-      bodyFont: ['Monteserrat' , 'sans-serif'],
-      titleFont: ['Inter', 'sans-serif'],
+      bodyFont: ['Monteserrat' ],
+      titleFont: ['Castoro Titling'],
       },
       boxShadow: {
         navbarShadow: ' 0 10px 30px -10px rgba(2,12,27,0.7)',

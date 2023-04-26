@@ -8,7 +8,7 @@ function Banner() {
     const [text, count] = useTypewriter({
         words:[
             'Hey, Josh here',
-            'Guy-who-loves-code.jsx',
+            'Guy-who-loves-code.tsx',
             '<LovesLifeMore />'
         ],
         loop: true,
