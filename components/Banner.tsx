@@ -27,7 +27,7 @@ function Banner() {
         initial={{opacity: 0}}
         animate={{opacity:1}}
         transition={{delay:1.5}}
-         className=' text-sm uppercase text-gray-500 pb-2 tracking-[15px] text-center mx-auto'>Software Engineer
+         className=' text-sm uppercase text-gray-500 pb-2 tracking-[15px] text-center mx-auto'>Email Developer
          </motion.h2>
         
         <h3 className='text-lg font-titleFont tracking-wide h-6 text-textGreen text-center mx-auto'>{text}
@@ -37,9 +37,11 @@ function Banner() {
         initial={{opacity: 0}}
         animate={{opacity:1}}
         transition={{delay:1.5}} 
-        className='mx-auto'>
+        className='mx-auto z-50'>
+          <a href="#projects">
         <button className=' w-52 h-14 text-sm font-titleFont border mx-auto border-textGreen rounded-md text-textGreen
-         tracking-wide hover:bg-hoverColor duration-300 z-auto'>Visit Projects</button>
+         tracking-wide hover:bg-hoverColor duration-300 '>Visit Projects</button>
+         </a>
        </motion.div>
         </section>
   )
