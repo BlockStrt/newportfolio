@@ -65,7 +65,7 @@ const introPictureVariants = {
    scrollbar-thumb-textDark/60 mainey">
         
      <Navbar/>
-     <div className='w-full h-[88vh] xl:flex items-center gap-20 justify-between'>
+     <div className='w-full h-[88vh] xl:flex items-center gap-20 justify-between overflow-x-hidden'>
       <motion.div
       initial={{opacity: 0}}
       animate={{opacity:1}}

@@ -15,7 +15,7 @@ function About() {
             <div className='w-full lgl:w-2/3 text-base text-textDark font-medium flex
             flex-col gap-4'>
                 <p>
-                Web developer with a proven track record of 2 years in web development,<span className='text-textGreen'> I am currently on a quest</span> to broaden my expertise in all technologies, while utilizing my technical and creative skills to enhance team productivity and harness the full potential of designing real-world applications. 
+                Email developer with a proven track record of 2 years in Email development,<span className='text-textGreen'> I am currently on a quest</span> to broaden my expertise in all technologies, while utilizing my technical and creative skills to enhance team productivity and harness the full potential of designing real-world applications. 
                 </p>
                 <p>
                 My competency spans across a diverse range of technologies,
