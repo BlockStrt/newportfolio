@@ -116,7 +116,7 @@ const introPictureVariants = {
             As a 23 year old developer
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-          I am eager to seize every opportunity that comes my way to enhance my skills, access valuable resources, and strengthen my work ethic. It's important to note that the average age of programmers stands at 47 years old. Within this field, the majority of programmers are White (64.0%), followed by Asian (17.8%), Hispanic or Latino (8.5%), and Black or African American (4.8%). Despite the underrepresentation of African Americans in the industry, I am determined to defy the odds and make a significant impact in the tech world.
+          I am eager to seize every opportunity that comes my way to enhance my skills, access valuable resources, and strengthen my work ethic. It`s important to note that the average age of programmers stands at 47 years old. Within this field, the majority of programmers are White (64.0%), followed by Asian (17.8%), Hispanic or Latino (8.5%), and Black or African American (4.8%). Despite the underrepresentation of African Americans in the industry, I am determined to defy the odds and make a significant impact in the tech world.
           </Typography>
         </Box>
       </Modal>
