@@ -72,7 +72,7 @@ function Banner() {
         initial={{opacity: 0}}
         animate={{opacity:1}}
         transition={{delay:1.5}} 
-        className='mx-auto '>
+        className='mx-auto z-50 '>
           <a href="#projects">
         <button className=' w-52 h-14 text-sm font-titleFont border mx-auto border-textGreen rounded-md text-textGreen
          tracking-wide hover:bg-hoverColor duration-300  '>Visit Projects</button>
