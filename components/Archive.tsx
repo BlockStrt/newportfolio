@@ -14,8 +14,8 @@ const Archive = () => {
         '>
        
           <ArchiveCard 
-          title='The Vitamin Shoppe Email'
-          des='HTML Email'
+          title='The Vitamin Shoppe'
+          des='Promotional Email'
           listItem={['HTML','CSS']}
           link='https://main--stunning-sherbet-097bd6.netlify.app'
           />
