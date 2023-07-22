@@ -1,10 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { useGlitch } from 'react-powerglitch'
+
+
+
 
 function Banner() {
+  const glitch = useGlitch({
+    "playMode": "hover",
+    "createContainers": true,
+    "hideOverflow": false,
+    "timing": {
+      "duration": 250,
+      "iterations": 1
+    },
+    "glitchTimeSpan": {
+      "start": 0,
+      "end": 1
+    },
+    "shake": {
+      "velocity": 15,
+      "amplitudeX": 0.2,
+      "amplitudeY": 0.2
+    },
+    "slice": {
+      "count": 6,
+      "velocity": 15,
+      "minHeight": 0.02,
+      "maxHeight": 0.15,
+      "hueRotate": true
+    },
+    "pulse": false
+  });
+  
     const [text, count] = useTypewriter({
         words:[
             'Hey, Josh here',
@@ -21,7 +52,11 @@ function Banner() {
         initial={{opacity: 0}}
         animate={{opacity:1}}
         transition={{delay:1.5}}>
-        <Image className='relative rounded-full h-32 w-32 mx-auto object-cover' src='/assets/images/pfp.jpeg' width={100} height={100} alt='image'/>
+          
+        <Image className='relative rounded-full h-32 w-32 mx-auto object-cover'
+         ref={glitch.ref}
+         
+         src='/assets/images/pfp.jpeg' width={100} height={100} alt='image'/>
         </motion.div>
         <motion.h2
         initial={{opacity: 0}}

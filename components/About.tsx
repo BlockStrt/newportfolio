@@ -1,12 +1,40 @@
 import {BsLightningCharge} from 'react-icons/bs'
 import SectionTitle from './SectionTitle'
 import Image from 'next/image'
+import { useGlitch } from 'react-powerglitch'
+
 
 
 
 
 
 function About() {
+    const glitch = useGlitch({
+        "playMode": "hover",
+        "createContainers": true,
+        "hideOverflow": false,
+        "timing": {
+          "duration": 250,
+          "iterations": 1
+        },
+        "glitchTimeSpan": {
+          "start": 0,
+          "end": 1
+        },
+        "shake": {
+          "velocity": 15,
+          "amplitudeX": 0.2,
+          "amplitudeY": 0.2
+        },
+        "slice": {
+          "count": 6,
+          "velocity": 15,
+          "minHeight": 0.02,
+          "maxHeight": 0.15,
+          "hueRotate": true
+        },
+        "pulse": false
+      });
   return (
     <section id='about'
     className='max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8'>
@@ -67,7 +95,8 @@ function About() {
             </div>
             <div className='w-full lgl:w-1/3 h-80 relative group'>
                 <div className='absolute w-full h-80 -left-6 -top-6 rounded-lg'>
-                    <div className='w-full h-full relative z-20 flex pl-6 lgl:pl-0'>
+                    <div className='w-full h-full relative z-20 flex pl-6 lgl:pl-0'
+                    ref={glitch.ref}>
                         <Image className='rounded-lg h-full object-cover' src='/assets/images/astro.JPG' alt='profileimg' width={300} height={300}  />
                     
                     <div className='hidden lgl:inline-block absolute w-full h-80 bg-textGreen/20

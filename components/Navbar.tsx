@@ -7,10 +7,37 @@ import {TiSocialLinkedinCircular, TiSocialInstagramCircular, TiSocialTwitterCirc
 import {TfiGithub} from 'react-icons/tfi'
 import Link from 'next/link'
 import {MdOutlineClose} from 'react-icons/md'
+import { useGlitch } from 'react-powerglitch'
 
 function Navbar() {
   const ref = useRef<string | any>('')
   const [showMenu, setShowMenu] = useState(false)
+  const glitch = useGlitch({
+    "playMode": "always",
+    "createContainers": true,
+    "hideOverflow": false,
+    "timing": {
+      "duration": 2550,
+      "easing": "ease-in"
+    },
+    "glitchTimeSpan": {
+      "start": 0,
+      "end": 0.33
+    },
+    "shake": {
+      "velocity": 10,
+      "amplitudeX": 0.45,
+      "amplitudeY": 0.2
+    },
+    "slice": {
+      "count": 14,
+      "velocity": 4,
+      "minHeight": 0.01,
+      "maxHeight": 0.15,
+      "hueRotate": true
+    },
+    "pulse": false
+  });
   const handleScroll = (e:React.MouseEvent<HTMLAnchorElement, MouseEvent>) =>{
     e.preventDefault();
     setShowMenu(false)
@@ -39,7 +66,7 @@ function Navbar() {
         <div className=' max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-center'>
             <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:2.5}} className=' mr-24'
             >
-                <Image className='w-14 pt-2' src={logo} height={80} width={80} alt='logo'/>
+                <Image className='w-14 pt-2' ref={glitch.ref} src={logo} height={80} width={80} alt='logo'/>
             </motion.div>
             <div className='hidden md:inline-flex items-center gap-7'>
                 <ul className='flex text-[13px] gap-7'>

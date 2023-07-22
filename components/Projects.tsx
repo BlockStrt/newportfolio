@@ -2,16 +2,47 @@ import React from 'react'
 import Image from 'next/image'
 import SectionTitle from './SectionTitle'
 import {RxOpenInNewWindow} from 'react-icons/rx'
+import { useGlitch } from 'react-powerglitch'
+
 
 import { p1, p2, p3, p4 } from '@/public/assets'
 
 const Projects = () => {
+  const glitch = useGlitch({
+    "playMode": "hover",
+    "createContainers": true,
+    "hideOverflow": false,
+    "timing": {
+      "duration": 250,
+      "iterations": 1
+    },
+    "glitchTimeSpan": {
+      "start": 0,
+      "end": 1
+    },
+    "shake": {
+      "velocity": 15,
+      "amplitudeX": 0.2,
+      "amplitudeY": 0.2
+    },
+    "slice": {
+      "count": 6,
+      "velocity": 15,
+      "minHeight": 0.02,
+      "maxHeight": 0.15,
+      "hueRotate": true
+    },
+    "pulse": false
+  });
   return (
     <section id='projects' className='max-w-container mx-auto lgl:px-20 py-24'>
         <SectionTitle title='Creations I`ve engineered' titleNo='03'/>
      <div className='w-full flex flex-col items-center justify-between gap-28 mt-10'>
            {/* project one */}
-           <div className='w-full flex flex-col items-center justify-center gap-28 mt-10'>
+           <div className='w-full flex flex-col items-center justify-center gap-28 mt-10'
+           ref={glitch.ref}
+           
+           >
             <div className='flex flex-col xl:flex-row gap-6'>
               <a 
                className='w-full xl:w-1/2 h-auto relative group'
@@ -49,7 +80,8 @@ const Projects = () => {
             </div>  
         </div>
         {/* project two */}
-        <div className='w-full flex flex-col items-center justify-center gap-28 mt-10'>
+        <div className='w-full flex flex-col items-center justify-center gap-28 mt-10'
+        ref={glitch.ref}>
             <div className='flex flex-col xl:flex-row-reverse gap-6'>
               <a 
                className='w-full xl:w-1/2 h-auto relative group'
@@ -86,7 +118,8 @@ const Projects = () => {
             </div>  
         </div>
         {/* project three */}
-        <div className='w-full flex flex-col items-center justify-center gap-28 mt-10'>
+        <div className='w-full flex flex-col items-center justify-center gap-28 mt-10'
+        ref={glitch.ref}>
             <div className='flex flex-col xl:flex-row gap-6'>
               <a 
                className='w-full xl:w-1/2 h-auto relative group'
@@ -121,7 +154,8 @@ const Projects = () => {
             </div>  
         </div>
         {/* project four */}
-        <div className='w-full flex flex-col items-center justify-center gap-28 mt-10'>
+        <div className='w-full flex flex-col items-center justify-center gap-28 mt-10'
+        ref={glitch.ref}>
             <div className='flex flex-col xl:flex-row-reverse gap-6'>
               <a 
                className='w-full xl:w-1/2 h-auto relative group'
