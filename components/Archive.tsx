@@ -20,10 +20,10 @@ const Archive = () => {
           link='https://main--stunning-sherbet-097bd6.netlify.app'
           />
            <ArchiveCard 
-          title='The Vitamin Shoppe Email'
+          title='SSENSE Transactional Email'
           des='HTML Email'
           listItem={['HTML','CSS']}
-          link='https://main--stunning-sherbet-097bd6.netlify.app'
+          link='https://tranquil-lolly-115870.netlify.app'
           />
           <ArchiveCard 
           title='The Vitamin Shoppe Email'
