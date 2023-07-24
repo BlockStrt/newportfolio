@@ -39,8 +39,9 @@ function About() {
     <section id='about'
     className='max-w-containerSmall mx-auto py-10 lgl:py-32 flex gap-8 flex-col-reverse'>
         <SectionTitle title='About Me' titleNo='01' />
-        <div className='flex flex-col lgl:flex-row-reverse gap-16'>
-            <div className='w-full lgl:w-2/3 text-base text-textDark font-medium flex
+        <div className='flex flex-col lgl:flex-row-reverse gap-16'
+        >
+            <div className='w-full lgl:w-2/3 text-base text-textDark font-medium sm:flex
             gap-4'>
                 <div className='w-[50vw] p-10 '>
                 <p className=''>

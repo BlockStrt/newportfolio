@@ -170,7 +170,7 @@ function Navbar() {
                   initial={{x:20, opacity: 0,}}
                   animate={{x:0, opacity:1}}
                   transition={{duration:0.1}}
-                  className='w-[80%] h-full overflow-y-scroll scrollbarHide bg-[#271c19]
+                  className='w-[80%] h-full overflow-y-scroll scrollbarHide bg-[#dfdedd]
                   flex flex-col items-center px-4 py-10 relative '
                   >
                     <MdOutlineClose 

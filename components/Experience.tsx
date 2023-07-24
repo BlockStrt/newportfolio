@@ -39,7 +39,7 @@ function Experience() {
   return (
     <section 
     id='experience'
-    className='max-w-containerxs mx-auto py-10 lgl:py-24 px-4 md:flex-col-reverse md:flex ' >
+    className=' max-w-container mx-auto py-10 lgl:py-24 px-4 md:flex-col-reverse md:flex ' >
         <SectionTitle title='Work Experience' titleNo='02'/>
         <div className='w-full mt-10 flex flex-col md:flex-row gap-16 '>
             <ul className='md:w-32 flex flex-col'>

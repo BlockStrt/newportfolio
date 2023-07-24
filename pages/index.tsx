@@ -82,11 +82,11 @@ const introPictureVariants = {
       <link rel='icon' href='/logo.ico'/>
     </Head>
     
-    <main className="w-full h-screen justify-center font-bodyFont bg-bodyColor text-textLight
-    overflow-y-hidden scrollbar scrollbar-track-textDark/20
+    <main className=" w-screen h-screen justify-center font-bodyFont bg-bodyColor text-textLight
+    overflow-y-hidden  scrollbar scrollbar-track-textDark/20 overflow-x-hidden
    scrollbar-thumb-textDark/60 mx-auto mainey ">
      <Navbar/>
-     <div className=' mx-auto h-[88vh] w-[100%] xl:flex items-center gap-20 justify-between'>
+     <div className=' mx-auto h-[88vh]  xl:flex items-center gap-20 justify-between overflow-x-hidden'>
         
       <motion.div
       initial={{opacity: 0}}
