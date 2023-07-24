@@ -42,7 +42,7 @@ function About() {
         <div className='flex flex-col lgl:flex-row-reverse gap-16'>
             <div className='w-full lgl:w-2/3 text-base text-textDark font-medium flex
             gap-4'>
-                <div className='w-[50vw] '>
+                <div className='w-[50vw] p-10 '>
                 <p className=''>
                 Email developer with a proven track record of 2 years in Email development,<span className='text-textGreen'> I am currently on a quest</span> to broaden my expertise in all technologies, while utilizing my technical and creative skills to enhance team productivity and harness the full potential of designing real-world applications. 
                 </p>

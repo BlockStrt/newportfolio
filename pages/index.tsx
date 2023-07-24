@@ -84,16 +84,16 @@ const introPictureVariants = {
     
     <main className="w-full h-screen justify-center font-bodyFont bg-bodyColor text-textLight
     overflow-y-hidden scrollbar scrollbar-track-textDark/20
-   scrollbar-thumb-textDark/60 mainey ">
+   scrollbar-thumb-textDark/60 mx-auto mainey ">
      <Navbar/>
-     <div className=' mx-auto h-[88vh] xl:flex items-center gap-20 justify-between overflow-x-hidden'>
+     <div className=' mx-auto h-[88vh] w-[100%] xl:flex items-center gap-20 justify-between'>
         
       <motion.div
       initial={{opacity: 0}}
       animate={{opacity:1}}
       transition={{delay:1.5}}
        className='hidden xl:inline-flex w-32 h-full left-0 bottom-0'><LeftSide/></motion.div>
-      <div className='h-[88vh] mx-auto p-4 w-full overflow-y-scroll overflow-x-hidden  snap-y snap-mandatory'>
+      <div className='h-[88vh]  mx-auto  overflow-y-scroll  snap-y snap-mandatory'>
         <div className='snap-start'>
         <Banner/>
         </div>
