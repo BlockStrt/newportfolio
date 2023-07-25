@@ -96,7 +96,7 @@ const ProjectsTwo = () => {
                <div className='w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between
             items-end text-right xl:mr-16 z-10'>
               <p className='font-titleFont text-textGreen text-sm tracking-wide'>Featured Project</p>
-              <h3 className='text-2xl font-bold'>Hammer&Hope</h3>
+              <h3 className='text-2xl font-bold'>Jugrnaut Chicago</h3>
               <p className='bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md'>
               Chicago based <span className='text-textGreen'>streetwear</span> brand
               </p>
