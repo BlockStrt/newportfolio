@@ -53,8 +53,8 @@ function About() {
                 </p>
                 </div>
                 <div className='w-[100vw] '>
-                <ul className='max-w-[450px] text-sm font-titleFont grid grid-cols-2 mt-6 p-5 mx-auto '>
-                    <li className='flex items-center gap-2'>
+                <ul className='w-[100%] justify-center text-sm font-titleFont grid grid-cols-2 mt-6 p-5 mx-auto '>
+                    <li className='flex items-center gap-2  '>
                         <span className='text-textGreen'><BsLightningCharge/>
                         </span>Javascript (ES6+)
                         </li>
