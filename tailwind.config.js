@@ -32,7 +32,7 @@ module.exports = {
       },
       colors: {
         bodyColor: '#fffffe',
-        textGreen: '#272343',
+        textGreen: '#005792',
         textLight: '#e78fb3',
         textDark: '#272343',
         hoverColor: 'rgba(100,255,218,0.1)',

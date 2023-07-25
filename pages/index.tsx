@@ -14,6 +14,7 @@ import Projects from '@/components/Projects'
 import Archive from '@/components/Archive'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import ProjectsTwo from '@/components/works/ProjectsTwo'
 
 
 
@@ -110,14 +111,24 @@ const introPictureVariants = {
         <Projects/>
         </motion.div>
         <motion.div
+        className='snap-start'
+        initial="hide"
+        whileInView="show"
+        exit="hide"
+        variants={introHeaderVariants}>
+        {/* projects */}
+        <ProjectsTwo/>
+        </motion.div>
+        {/* ARCHIVE SECTION HOLD FOR LATER */}
+        {/* <motion.div
         className='snap-center'
         initial="hide"
         whileInView="show"
         exit="hide"
         variants={introPictureVariants}>
         {/* archive */}
-        <Archive/>
-        </motion.div>
+        {/* <Archive/>
+        </motion.div> */} 
         <motion.div
         className='snap-center'
         initial="hide"
