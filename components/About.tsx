@@ -43,16 +43,16 @@ function About() {
         >
             <div className='w-full lgl:w-2/3 text-base text-textDark font-medium sm:flex
             gap-4'>
-                <div className='w-[50vw] p-10 '>
-                <p className=''>
+                <div className='w-[100vw] p-10 text-center  '>
+                <p className=' text-xs mdl:text-base'>
                 Email developer with a proven track record of 2 years in Email development,<span className='text-textGreen'> I am currently on a quest</span> to broaden my expertise in all technologies, while utilizing my technical and creative skills to enhance team productivity and harness the full potential of designing real-world applications. 
                 </p>
-                <p className=''>
+                <p className='text-xs mdl:text-base'>
                 My competency spans across a diverse range of technologies,
                 <br/> <span className='text-textGreen'>including but not limited to: </span>
                 </p>
                 </div>
-                <div className='w-[50vw] '>
+                <div className='w-[100vw] '>
                 <ul className='max-w-[450px] text-sm font-titleFont grid grid-cols-2 mt-6 p-5 mx-auto '>
                     <li className='flex items-center gap-2'>
                         <span className='text-textGreen'><BsLightningCharge/>

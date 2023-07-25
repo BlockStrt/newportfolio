@@ -46,7 +46,7 @@ export default function Home() {
   const introHeaderVariants = {
     hide: {
         opacity: 0,
-        x: -500,
+        x: 200,
     },
     show: {
         opacity: 1,
@@ -93,7 +93,7 @@ const introPictureVariants = {
       animate={{opacity:1}}
       transition={{delay:1.5}}
        className='hidden xl:inline-flex w-32 h-full left-0 bottom-0'><LeftSide/></motion.div>
-      <div className='h-[88vh]  mx-auto  overflow-y-scroll  snap-y snap-mandatory'>
+      <div className='h-[88vh] w-full  mx-auto  overflow-y-scroll overflow-x-hidden  snap-y snap-mandatory'>
         <div className='snap-start'>
         <Banner/>
         </div>
