@@ -14,33 +14,18 @@ import Projects from '@/components/Projects'
 import Archive from '@/components/Archive'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
+
 
 
 
 
 
 const inter = Inter({ subsets: ['latin'] })
-const style = {
-  position: 'absolute' as 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
-};
 
 
 export default function Home() {
   const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  
 
 
   const introHeaderVariants = {
@@ -86,40 +71,24 @@ const introPictureVariants = {
     overflow-y-hidden  scrollbar scrollbar-track-textDark/20 overflow-x-hidden
    scrollbar-thumb-textDark/60 mx-auto mainey ">
      <Navbar/>
-     <div className=' mx-auto h-[88vh]  xl:flex items-center gap-20 justify-between overflow-x-hidden'>
+     <div className=' mx-auto h-[88vh]  xl:flex items-center gap-20 justify-between overflow-x-hidden '>
         
       <motion.div
       initial={{opacity: 0}}
       animate={{opacity:1}}
       transition={{delay:1.5}}
        className='hidden xl:inline-flex w-32 h-full left-0 bottom-0'><LeftSide/></motion.div>
-      <div className='h-[88vh] w-full  mx-auto  overflow-y-scroll overflow-x-hidden  snap-y snap-mandatory'>
+      <div className='h-[88vh] w-full  mx-auto overflow-y-scroll overflow-x-hidden  snap-y snap-mandatory'>
         <div className='snap-start'>
         <Banner/>
         </div>
       <motion.div
-      className='snap-center'
+      className=' snap-start'
       initial="hide"
       whileInView="show"
       exit="hide"
       variants={introHeaderVariants}>
         {/* about */}
-        <Button onClick={handleOpen}>fun fact, read here</Button>
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="Fun fact"
-        aria-describedby="Fact about African American population"
-      >
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            As a 23 year old developer
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-          I am eager to seize every opportunity that comes my way to enhance my skills, access valuable resources, and strengthen my work ethic. It`s important to note that the average age of programmers stands at 47 years old. Within this field, the majority of programmers are White (64.0%), followed by Asian (17.8%), Hispanic or Latino (8.5%), and Black or African American (4.8%). Despite the underrepresentation of African Americans in the industry, I am determined to defy the odds and make a significant impact in the tech world.
-          </Typography>
-        </Box>
-      </Modal>
         <About/>
         </motion.div>
         <motion.div

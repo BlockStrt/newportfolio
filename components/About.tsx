@@ -37,11 +37,11 @@ function About() {
       });
   return (
     <section id='about'
-    className='max-w-containerSmall mx-auto py-10 lgl:py-32 flex gap-8 flex-col-reverse'>
+    className='max-w-containerSmall mx-auto py-10 lgl:py-32 mdl:flex gap-8 mdl:flex-col-reverse'>
         <SectionTitle title='About Me' titleNo='01' />
         <div className='flex flex-col lgl:flex-row-reverse gap-16'
         >
-            <div className='w-full lgl:w-2/3 text-base text-textDark font-medium sm:flex
+            <div className='w-full lgl:w-2/3 text-base text-textDark font-medium mdl:flex
             gap-4'>
                 <div className='w-[100vw] p-10 text-center  '>
                 <p className=' text-xs mdl:text-base'>
@@ -100,7 +100,7 @@ function About() {
             </div>
             <div className='w-full lgl:w-1/3 h-80 relative group'>
                 <div className='absolute w-full h-80 -left-6 -top-6 rounded-lg'>
-                    <div className='w-full h-full relative z-20 flex pl-6 lgl:pl-0'
+                    <div className='w-full h-full relative z-20 flex pl-6 lgl:pl-0 justify-center'
                     ref={glitch.ref}>
                         <Image className='rounded-lg h-full object-cover' src='/assets/images/astro.JPG' alt='profileimg' width={300} height={300}  />
                     
