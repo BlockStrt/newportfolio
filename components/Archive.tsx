@@ -21,7 +21,7 @@ const Archive = () => {
           />
            <ArchiveCard 
           title='SSENSE Transactional Email'
-          des='HTML Email'
+          des='HTML Transactional Email'
           listItem={['HTML','CSS']}
           link='https://tranquil-lolly-115870.netlify.app'
           />
